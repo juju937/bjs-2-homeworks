@@ -21,6 +21,6 @@ function calculateTotalMortgage(percent, contribution, amount, countMonths) {
   return totalAmount.toFixed(2);
 }
 
-let result = Number(calculateTotalMortgage(10, 0, 50000, 12));
+let result = Number(calculateTotalMortgage(percent, contribution, amount, countMonths));
 
 console.log(result);
