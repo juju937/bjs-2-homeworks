@@ -19,6 +19,4 @@ function calculateTotalMortgage(percent, contribution, amount, countMonths) {
   return Number(totalAmount.toFixed(2));
 }
 
-let result = Number(calculateTotalMortgage(percent, contribution, amount, countMonths));
-
-console.log(result);
+calculateTotalMortgage(percent, contribution, amount, countMonths);
