@@ -95,7 +95,7 @@ function makeWork (arrOfArr, func) {
   for (let i = 0; i < arrOfArr.length; i++) {
     const sum = func(...arrOfArr[i]);
     if (sum > maxWorkerResult) {
-      sum = maxWorkerResult;
+      maxWorkerResult = sum;
     }
   }
 
