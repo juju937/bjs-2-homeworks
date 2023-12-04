@@ -10,10 +10,13 @@ function Student(name, gender, age) {
   }
   
   Student.prototype.addMarks = function (...marks) {
-    if (!this.marks || this.marks.length === 0) {
+    if (!this.marks) {
+      return "Unable to add new marks";
+    }
+    if (this.marks.length === 0) {
       this.marks = [...marks]; 
     } else {
-        this.marks.push(...marks);
+      this.marks.push(...marks); 
     }
   }
   
