@@ -9,20 +9,20 @@ class PrintEditionItem {
 
   fix() {
     this.state *= 1.5;
+  }
 
-    set state(newState) {
-      if (newState < 0) {
-        this._state = 0;
-      } else if (newState > 100) {
-        this._state = 100;
-      } else {
-        this._state = newState;
-      }
+  set state(newState) {
+    if (newState < 0) {
+      this._state = 0;
+    } else if (newState > 100) {
+      this._state = 100;
+    } else {
+      this._state = newState;
     }
+  }
 
-    get state() {
-      return this._state;
-    }
+  get state() {
+    return this._state;
   }
 }
 
