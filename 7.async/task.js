@@ -4,8 +4,8 @@ class AlarmClock {
     this.intervalId = null;
   }
 
-  addClock(time, action) {
-    if (!time || action === undefined) {
+  addClock(time, callback) {
+    if (!time || callback === undefined) {
       throw new Error("Отсутствуют обязательные аргументы");
     }
 
@@ -49,7 +49,7 @@ class AlarmClock {
       });
     }, 1000);
   }
-  
+
   stop() {
     clearInterval(this.intervalId);
     this.intervalId = null;
